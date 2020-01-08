@@ -15,5 +15,5 @@ The implementation of the shell is capable of executing the following commands:
     iii. rm
     iv. cat
     v. date
-	all the external commands were executed using execv() by simply passing the path of the 	required command and the command line as the arguments.
+	all the external commands were executed using execv() by simply passing the path of the required command and the command line as the arguments.
 The function fork() was used to to initiate a child process which handles the external commands. This was done to take care that the program does not terminate when an external command is done with its execution. The program recognises only the commands mentioned above and gives an error message whenever it does not recognise the entered command.
