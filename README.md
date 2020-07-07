@@ -4,7 +4,7 @@ The implementation of the shell is capable of executing the following commands:
 
     1. INTERNAL COMMANDS:
         i. cd- it uses the chdir(x) command which changes to directory x. It also gives an error message if the mentioned directory does not exist.
-        ii. Echo – it prints everything that follows the command. It handles to corner cases, namely,-e for interpreting the escape sequences and -n for not adding a new line character.
+        ii. Echo – it prints everything that follows the command. It handles two corner cases, namely,-e for interpreting the escape sequences and -n for not adding a new line character.
         iii. History- this was done by creating a file that maintains the history of commands, adding to the file whenever a command is executed. The entire file was displayed whenever this command was executed.
         iv. Pwd- this used the getcwd() command and printed the present working directory.
         v. Exit- simply exited the code.
